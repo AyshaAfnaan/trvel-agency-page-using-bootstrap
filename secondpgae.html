@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <i class="bi bi-airplane-fill"></i>
+            Travel
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#about">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#destination">Destination</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container d-flex justify-content-center">
+        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="10000">
+                    <img src="data:image/jpeg;base64,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"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-vIKvFEJej5Boeqi8N4BrRoUKaIdc126Zaw&usqp=CAU"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQylRUtfPKqEDx_u2MfJgeuVqV2YHhBhvMP_w&usqp=CAU"
+                        class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleInterval"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleInterval"
+                data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="jumbotron">
+        <div class="container" id="about">
+            <div class="row">
+                <div class="col-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPaS4tyh9Vc9GnuEEZ5FuUaB8TEE_JJj6Cmg&usqp=CAU"
+                        alt="" srcset="">
+                </div>
+                <div class="col-8" text-muted>
+                    <p>
+                        We wholeheartedly believe that our destination knowledge and connections, paired with an
+                        understanding of our travelers’ passions, allow us to create itineraries that cannot be
+                        replicated or forgotten. Covering the broader points (such as matching the perfect hotels with
+                        your style preferences) to the finer details (such as having your favorite drink awaiting your
+                        arrival), we take the time and stress out of the planning process so that only thing left for
+                        you to do <span>arrive, relax and enjoy.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-flex justify-content-center" id="destination">
+        <div class="row">
+            <div class="col-lg-3 col-md-2 col-sm-1">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5ec49a6be62b49410cf3dcaf/1590159541436-F55M208XAUO5UAN7IVAK/alex-vasey-5_Bu25SV6X8-unsplash+%281%29.jpg?format=500w"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">The Middle East</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-2 col-sm-1 ml-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5ec49a6be62b49410cf3dcaf/1590160618781-DL1X7YXO9DHIIZUOTKME/chema-photo-xBN62x8T-fw-unsplash.jpg?format=500w"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Asia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 ml-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5ec49a6be62b49410cf3dcaf/1590021261282-C1OFU4T30W091NSZP8SG/berti-benbanaste-2hkDhGEZVBg-unsplash.jpg?format=500w"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Central America</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container d-flex justify-content-center mt-4">
+        <div class="row">
+            <div class="col-lg-3 col-md-2 col-sm-1">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5ec49a6be62b49410cf3dcaf/1590159605737-20BH4ROZJE6L4LI78U9C/andrew-ly-iJTXWlMmoOg-unsplash.jpg?format=500w"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">North America</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-2 col-sm-1 ml-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5ec49a6be62b49410cf3dcaf/1590158951448-3LWWYA7SZSQJIYA6F4N8/wade-lambert-YfUvekdiPvo-unsplash.jpg?format=500w"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Asia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 ml-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5ec49a6be62b49410cf3dcaf/1590160055037-HE66FNFCRJGWXMNO0QQN/megan-soule-yfq0bOJmeZI-unsplash+%281%29.jpg?format=500w"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Europe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container bg-light text-center mt-4" id="contact">
+        <h2 class="pt-2 text-danger">READY TO ROAM?</h2>
+        <h3 class="text-muted">WE ARE EXCITED TO START THIS JOURNEY WITH YOU!</h3>
+        <p class="pb-2">Please note, our expertise is tailor-made, private travel which includes 5* accommodations and exclusive
+            experiences. While each of our itineraries are customized, most of our private getaways begin around $800
+            per person per day. Actual prices fluctuate based on seasonality, duration, destination, and your unique
+            travel preferences.</p>
+        <p><i class="bi bi-instagram"></i> travel_world</p>
+        <p><i class="bi bi-telephone-fill"></i> 9012345678</p>
+        <p><i class="bi bi-envelope"></i> travel123@gmail.com</p>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
